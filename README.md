@@ -31,20 +31,35 @@ I customized and optimized several scripts and configurations to create a stable
 📂 project-root
 <br>
 ┣ 📁 client
+<br>
 ┃ ┗ main.lua
+<br>
 ┣ 📁 server
+<br>
 ┃ ┗ main.lua
+<br>
 ┣ 📁 locales
+<br>
 ┃ ┗ en.lua
+<br>
 ┣ 📁 html
+<br>
 ┃ ┣ ui.html
+<br>
 ┃ ┣ config.js
+<br>
 ┃ ┣ inventory.js
+<br>
 ┃ ┣ en.js
+<br>
 ┃ ┗ ui.css
+<br>
 ┣ 📄 config.lua
+<br>
 ┣ 📄 fxmanifest.lua
+<br>
 ┣ 📄 LICENSE
+<br>
 ┗ 📄 custom_inventory_ui.sql
 
 ---
