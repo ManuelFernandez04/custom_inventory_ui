@@ -26,4 +26,7 @@ I customized and optimized scripts, settings, and events to adapt the system to 
 
 ---
 
+**Note:** This project was built on top of an existing open-source framework (ESX) and customized for educational and learning purposes.  
+All modifications, configurations, and improvements were made independently.
+
 👨‍💻 *Developed and customized by Manuel Fernández (2021 – 2024)*
