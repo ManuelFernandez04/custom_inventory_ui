@@ -74,7 +74,8 @@ I customized and optimized several scripts and configurations to create a stable
 ---
 
 ## 🧾 License
-This project was built on top of an existing open-source framework (ESX) and customized for **educational and learning purposes**. 
+This project was built on top of an existing open-source framework (ESX) and customized for **educational and learning purposes**.
+<br>
 All modifications, configurations, and improvements were made independently.
 
 ---
