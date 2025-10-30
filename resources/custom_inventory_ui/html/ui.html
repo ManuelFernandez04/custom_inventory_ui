@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Inventory UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+</head>
+
+<body>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Config & locale -->
+    <script src="js/config.js"></script>
+    <script src="js/locales/en.js"></script>
+
+    <!-- Inventory logic -->
+    <script src="js/inventory.js"></script>
+
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                clickOutside: true
+            });
+
+            // Inicialización de textos
+            $("#use").text(invLocale.useItem);
+            $("#give").text(invLocale.giveItem);
+            $("#drop").text(invLocale.dropItem);
+            $("#noSecondInventoryMessage").text(invLocale.secondInventoryNotAvailable);
+        });
+    </script>
+
+    <!-- INVENTORY UI -->
+    <div class="ui">
+        <div class="inventory">
+            <div id="playerInventory"></div>
+
+            <div id="controls">
+                <div class="info-div"></div>
+                <div class="controls-div">
+                    <input type="number" class="control" id="count" value="1" min="1">
+                    <div class="control" id="use"></div>
+                    <div class="control" id="give"></div>
+                    <div class="control" id="drop"></div>
+                </div>
+            </div>
+
+            <div id="otherInventory">
+                <div id="noSecondInventoryMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEAR PLAYERS DIALOG -->
+    <div id="dialog">
+        <div id="nearPlayers"></div>
+    </div>
+</body>
+</html>
